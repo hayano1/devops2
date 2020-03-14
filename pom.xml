@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.example</groupId>
 	<artifactId>demoProject</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
 	<name>demoProject</name>
 	<description>Demo project for Spring Boot</description>
@@ -65,19 +65,29 @@
                           </plugin>
 
 		</plugins>
+		
+		
 	</build>
 
 	<distributionManagement>
 		<repository>
 			<id>release</id>
 			<name>releases</name>
-			<url>http://localhost:80/artifactory/libs-release</url>
+
+			<url>http://localhost:80/artifactory/libs-release-local</url>
+
+		
+
 		</repository>
 
 		<snapshotRepository>
 			<id>snapshot</id>
 			<name>snapshots</name>
-			<url>http://localhost:80/artifactory/libs-snapshot</url>
+
+			<url>http://localhost:80/artifactory/libs-snapshot-local</url>
+
+		
+
 		</snapshotRepository>
 
 	</distributionManagement>
@@ -88,6 +98,8 @@
 		<url>https://github.com/hayano1/devops2.git</url>
 		<tag>v1.6.1</tag>
 	</scm>
+	
+	
 
 
 </project>
