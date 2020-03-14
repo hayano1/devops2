@@ -53,6 +53,16 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+
+			<plugin>
+                               <groupId>org.apache.maven.plugins</groupId>
+                              <artifactId>maven-release-plugin</artifactId>
+                               <version>2.5.1</version>
+                               <configuration>
+                                      <tagNameFormat>v@{project.version}</tagNameFormat>
+                                       <autoVersionSubmodules>true</autoVersionSubmodules>
+                                </configuration>
+                          </plugin>
 		</plugins>
 	</build>
 
@@ -60,15 +70,15 @@
 		<repository>
 			<id>release</id>
 			<name>releases</name>
-			<url>http://localhost:81/artifactory/libs-release-local</url>
+			<url>http://localhost:80/artifactory/libs-release-local</url>
 		</repository>
-		
+
 		<snapshotRepository>
 			<id>snapshot</id>
 			<name>snapshots</name>
-			<url>http://localhost:81/artifactory/libs-snapshot-local</url>
+			<url>http://localhost:80/artifactory/libs-snapshot-local</url>
 		</snapshotRepository>
-		
+
 	</distributionManagement>
 
 	<scm>
