@@ -67,6 +67,18 @@
         <name>DESKTOP-5F3QCE4-snapshots</name>
         <url>http://localhost/artifactory/libs-snapshot-local</url>
     </snapshotRepository>
+    
+    <repository>
+          <id>release</id>
+          <name>release</name>
+          <url>http://localhost:80/artifactory/libs-release-local</url>
+          <releases>
+            <enabled>true</enabled>
+          </releases>
+          <snapshots>
+            <enabled>false</enabled>
+          </snapshots>
+        </repository>
 </distributionManagement>
 
 		
