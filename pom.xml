@@ -70,17 +70,12 @@
 	</build>
 
 	<distributionManagement>
-		<repository>
-			<id>release</id>
-			<name>releases</name>
-			<url>http://localhost:80/artifactory/libs-release-local</url>
-		</repository>
-		<snapshotRepository>
-			<id>snapshot</id>
-			<name>snapshots</name>
-			<url>http://localhost:80/artifactory/libs-snapshot-local</url>
-		</snapshotRepository>
-	</distributionManagement>
+    <snapshotRepository>
+        <id>snapshots</id>
+        <name>DESKTOP-5F3QCE4-snapshots</name>
+        <url>http://localhost/artifactory/libs-snapshot-local</url>
+    </snapshotRepository>
+</distributionManagement>
 
 	<scm>
 		<connection>scm:git:https://github.com/hayano1/devops2.git</connection>
